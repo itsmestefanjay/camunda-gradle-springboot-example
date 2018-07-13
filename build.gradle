@@ -17,7 +17,7 @@ bootJar {
 }
 
 dependencies {
-    // for camunda 7.9
+    // for camunda engine 7.9
     compile("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:3.0.0")
     // overwrite spring-tx 3.x which prevents engine from starting
     compile 'org.springframework:spring-tx:5.0.6.RELEASE'
