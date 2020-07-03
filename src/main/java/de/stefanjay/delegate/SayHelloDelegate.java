@@ -30,7 +30,7 @@ public class SayHelloDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
-        LOGGER.info("hello {}", execution);
+        LOGGER.info("hello {}", execution.getProcessInstanceId());
     }
 
 }
