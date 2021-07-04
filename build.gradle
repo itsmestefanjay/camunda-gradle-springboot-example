@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 Stefan Schultz
+ * Copyright (C) 2021 Stefan Schultz
  *
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
@@ -16,17 +16,17 @@
  */
 
 plugins {
-    id 'java'
+    id 'java-library'
     id 'idea'
-    id "org.springframework.boot" version "2.2.6.RELEASE"
+    id "org.springframework.boot" version "2.4.8"
 }
 
 repositories {
     mavenCentral()
 }
 
-sourceCompatibility =
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 bootJar {
     baseName = 'example-greeting'
@@ -34,6 +34,6 @@ bootJar {
 }
 
 dependencies {
-    compile 'org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.13.0'
-    compile 'com.h2database:h2:1.4.200'
+    implementation 'org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.15.0'
+    implementation 'com.h2database:h2:1.4.200'
 }
