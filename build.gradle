@@ -18,7 +18,7 @@
 plugins {
     id 'java-library'
     id 'idea'
-    id "org.springframework.boot" version "2.4.8"
+    id "org.springframework.boot" version "2.5.3"
 }
 
 repositories {
@@ -27,13 +27,11 @@ repositories {
 
 sourceCompatibility = 11
 targetCompatibility = 11
+group = 'de.stefanjay'
+version = '1.0-SNAPSHOT'
 
-bootJar {
-    baseName = 'example-greeting'
-    version = '1.0-SNAPSHOT'
-}
 
 dependencies {
-    implementation 'org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.15.0'
+    implementation 'org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.16.0'
     implementation 'com.h2database:h2:1.4.200'
 }
